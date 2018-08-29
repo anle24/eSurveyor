@@ -30,7 +30,6 @@ class Header extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <nav>
         <div className="nav-wrapper">
@@ -38,7 +37,7 @@ class Header extends Component {
             to={this.props.auth ? '/surveys' : '/'}
             className="left brand-logo"
           >
-            e.Surveyor
+            eSurveyor
           </Link>
           <ul className="right">{this.renderContent()}</ul>
         </div>
